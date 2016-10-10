@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="example.com.registrationform.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/FldName"
+            android:hint="Name"  />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/GrpDateOfBirth"
+            android:textAlignment="center">
+
+            <TextView
+                android:text="Date of Birth: "
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <Button
+                android:text="@string/SelectStr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnSelectDate"
+                android:layout_weight="1"
+                android:hint="Date of Birth" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Nationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LblNationality" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SpnNationality" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RbgGender" >
+
+            <TextView
+                android:text="Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LblGender"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/RbMale"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/RbFemale"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/MleAddress"
+                    android:hint="Address"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/TxtPhone"
+                android:hint="Phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/TilEMailAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+         <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/TxtEMailAddr"
+                android:hint="E-Mail" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
